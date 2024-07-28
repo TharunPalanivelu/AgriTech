@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float moisture_level;
+
+    // Simulate sensor reading
+    moisture_level = 35.2;
+
+    if (moisture_level < 20) {
+        printf("Soil is dry, initiate irrigation\n");
+    } else if (moisture_level > 80) {
+        printf("Soil is too wet, check drainage\n");
+    } else {
+        printf("Soil moisture level is optimal\n");
+    }
+
+    return 0;
+}
